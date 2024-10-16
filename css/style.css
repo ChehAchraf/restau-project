@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+/* Start the header  */
+nav{
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100%;
+}
+nav img{
+    width: 50px;    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+nav a:hover{
+    color: #933C24;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/banner.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center  ;
+    color:white;
+    padding:0px 80px;
+}
+header h3{
+    color: #E9BD8C;
+    width: 100%;
+    font-size: 2em;
+}
+header h1{
+    width: 100%;
+    font-family: "Sansita Swashed", system-ui;
+    font-size:5em;
+}
+header div{
+    margin-top: 30px;
+    display: inline-block;
+}
+header div button{
+    background-color: #933C24;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin-right: 30px;
+    cursor:pointer;
+}
+header div span {
+    color:#E9BD8C;
+    cursor: pointer;
+}
+header div button:hover{
+    background-color: #a1503a;
+    transform: scale(1.3);
+    transition: 1s;
+}
+/* End the header  */
+
+/* start top prodcut section */
+
+.main-top-product{
+    padding: 100px 80px;
+    text-align: center;
+    
+}
+.main-top-product h1{
+    font-family: "Sansita Swashed", system-ui;
+    font-size: 60px;
+    height: 300px;
+}
+.top-product{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.single-product{
+    background-image: url(../img/frame.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    color: white;
+    padding: 26px 26px;
+    
+}
+.info{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.single-product img {
+    width: 60%;
+    height: 70%;
+    
+}
+.single-product .price{
+    display: flex;
+    
+    bottom: 8;
+    justify-content: space-between;
+}
+.single-product .food-name{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+}
+.food-name button{
+    border: none;
+    padding: 4px 8px;
+    background: #933C24;
+    color: white;
+    cursor: pointer;
+}
+/* End top product section */
+
+/* Start menu section */
+.menu-section{
+    padding: 100px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-section h1{
+    font-family: "Sansita Swashed", system-ui;
+    font-size: 60px;
+    margin:30px 0px;
+}
+.menu-tabs span{
+    margin-left: 16px;
+    font-size: 1em;
+}
+.menu-tabs span {
+    font-weight: 600;
+    color: #5D5D5D;
+}
+.menu-tabs .active{
+    border-bottom: #933C24 solid;
+    cursor: pointer;
+}
+.menu-tabs span:nth-child(1) ~ span{
+    cursor: not-allowed;
+}
+.menu-content{
+    margin:60px 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.single-product-item{
+    width: calc(89%/3);
+
+}
+/* End menu section */
+/* start order discount */
+.main-order-discount{
+    background-image: url(../img/order_banner.png);
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    padding: 100px;
+    color:white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-order-discount p{
+    font-size: 42px;
+    font-family: "Sansita Swashed", system-ui;
+    color:#933C24;
+}
+.main-order-discount span{
+    margin:20px 0px;
+    color:#5D5D5D;
+    width: 250px;
+    text-align: inherit;
+}
+.main-order-discount button{
+    border: none;
+    padding:20px 30px;
+    background-color: #933C24;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+/* end order discount */
+/* start contact us section */
+.main-contact{
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-contact h1{
+    font-size: 48px;
+}
+.main-contact p{
+    width: 600px;
+    text-align: center;
+    margin: 20px 0px;
+}
+form *{
+    display: block;
+    margin-top: 10px;
+    width: 100%
+}
+input , textarea{
+    width: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #D9D9D9;
+    border: none;
+}
+.submit{
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #933C24;
+    color: white;
+}
+.submit:hover{
+    background-color: #a1503a;
+}
+/* end contact us section */
+
+/* start main about us */
+
+.main-about{
+    padding: 100px 80px;
+    text-align: center;
+}
+.cards{
+    margin:100px 0px ;
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.card{
+    background-color: #D9D9D9;
+    position: relative;
+    border-radius: 10px;
+    padding: 30px 30px;
+    padding-top: 70px;
+}
+.card img{
+    position: absolute;
+    top: -59px;
+    right: calc(100%/3);
+}
+.card p{
+    text-align: center;
+    /* margin-top: ; */
+}
+
+
+/* end main about us */
+
+/* start Footer */
+
+footer{
+    padding: 50px 80px;
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    color:#a1503a;
+}
+.logo-and-social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.social-icons span{
+    font-size: 1.3em;
+}
+.social-icons i{
+    font-size: 1em;
+    margin-right: 5px;
+}
+footer img {
+    width: 60px;
+    align-content: center;
+}
+footer hr {
+    margin:20px;
+    width: 100%;
+    
+}
+.Links-and-recent-posts{
+    color:#E9BD8D;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px !important;
+}
+.about-us p{
+    color: white;
+    font-size: 0.9em;
+}
+.about-us h4{
+    font-weight:700;
+}
+.about-us h4 +p {
+    margin-top: 8px;
+}
+.explore a{
+    display: block;
+    color: white;
+}
+.single-recent{
+    margin-top: 8px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.single-recent p{
+    font-size: 0.8em;
+}
+.single-recent p +p{
+    font-size: 1em;
+    color: white;
+}
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 99px;
+    color:white;
+}
+/* End Footer */
+
+/* start media querie */
+@media (max-width:673px ) {
+    nav{
+        padding: 10px 0px;
+        width: 100%;
+        overflow: hidden;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    nav a{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    header h3{
+        font-size: 1em;
+    }
+    header h1{
+        font-size: 3em;
+    }
+    footer{
+        height: 100%;
+    }
+    .logo-and-social-icons{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .Links-and-recent-posts{
+        flex-flow: row wrap;
+        align-content: center;
+    }
+}
+@media (max-width:1400px) {
+    header h3{
+        font-size: 1em;
+    }
+    header h1{
+        font-size: 2em;
+    }
+    header button{
+        font-size: 0.8em;
+    }
+    header span{
+        font-size: 0.8em;
+    }
+    .food-name p{
+        font-size: 0.8em;
+    }
+    .food-name button{
+        font-size: 0.7em;
+    }
+    
+}
+/* start media qeury for top prodcut */
+
+
+
+/* end media qeury for top prodcut */
