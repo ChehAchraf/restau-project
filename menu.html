@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <img class="logo" src="img/Logo.png" alt="">
+        <img class="logo" src="img/Logo.png" alt="Logo">
         <div class="menu-links">
             <a href="index.html">Home</a>
             <a href="best_of.html">Best of</a>
@@ -25,40 +25,157 @@
         <br>
         <h1>Sweet Treats<br> Perfect Eats</h1>
         <div>
-            <button><a href="#shop_now">Shop Now</a></button>
+            <a class="hero-btn" href="#shop_now">Shop Now</a>
             <span>Learn More</span>
         </div>
     </header>
 
     <!-- start menu section -->
     <section id="shop_now" class="menu-section">
-        <h1>Explore more</h1>
-        <div class="menu-tabs">
-            <span class="active">cake</span>
-            <span>Muffins</span>
-            <span>Croissant</span>
-            <span>Bread</span>
-            <span>Tart</span>
-            <span>Favorite</span>
-        </div>
-        <div class="menu-content">
-            <div class="single-product-item">
-                <img src="img/single1.png" alt="">
+        <div class="tabs">
+            <input type="radio" id="active" name="tab" checked>
+            <label for="active">Cake</label>
+            <div class="tab">
+                <div class="menu-content">
+                    <div class="single-product-item">
+                        <img src="img/single1.png" alt="cake with choclate">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/single2.png" alt="simple cake">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/single3.png" alt="browny">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/single4.png" alt="cake with strawberry">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/single5.png" alt="Birthday cake">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/single6.png" alt="mini cake">
+                    </div>
+                </div>
             </div>
-            <div class="single-product-item">
-                <img src="img/single2.png" alt="">
+            <input type="radio" id="muffins" name="tab" >
+            <label for="muffins">Muffins</label>
+            <div class="tab">
+                <div class="menu-content">
+                    <div class="single-product-item">
+                        <img src="img/muffins1.png" alt="Muffins with choclate">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/muffins2.png" alt="classic muffins">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/muffins3.png" alt="small muffins">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/muffins4.png" alt="Family muffins">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/muffins5.png" alt="muffins with shapes">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/muffins6.png" alt="Muffins with orange">
+                    </div>
+                </div>
             </div>
-            <div class="single-product-item">
-                <img src="img/single3.png" alt="">
+            <input type="radio" id="croissant" name="tab" >
+            <label for="croissant">Croissant</label>
+            <div class="tab">
+                <div class="menu-content">
+                    <div class="single-product-item">
+                        <img src="img/cr1.png" alt="Croissant with strawberry">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/cr2.png" alt="Croissant mixt">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/cr3.png" alt="Croissant tres bell">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/cr4.png" alt="Croissant xl">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/cr5.png" alt="croissant with chese">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/cr6.png" alt="Classic Croissant">
+                    </div>
+                </div>
             </div>
-            <div class="single-product-item">
-                <img src="img/single4.png" alt="">
+            <input type="radio" id="bread" name="tab" >
+            <label for="bread">Bread</label>
+            <div class="tab">
+                <div class="menu-content">
+                    <div class="single-product-item">
+                        <img src="img/bread1.png" alt="chese bread">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/bread2.png" alt="oat bread">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/bread3.png" alt="normal bread">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/bread4.png" alt="organic bread">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/bread5.png" alt="bread mixed with milk">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/bread6.png" alt="bread high quality">
+                    </div>
+                </div>
             </div>
-            <div class="single-product-item">
-                <img src="img/single5.png" alt="">
+            <input type="radio" id="tart" name="tab" >
+            <label for="tart">Tart</label>
+            <div class="tab">
+                <div class="menu-content">
+                    <div class="single-product-item">
+                        <img src="img/tart1.png" alt="Croissant with strawberry">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/tart2.png" alt="Croissant mixt">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/tart3.png" alt="Croissant tres bell">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/tart4.png" alt="Croissant xl">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/tart5.png" alt="croissant with chese">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/tart6.png" alt="Classic Croissant">
+                    </div>
+                </div>
             </div>
-            <div class="single-product-item">
-                <img src="img/single6.png" alt="">
+            <input type="radio" id="favourite" name="tab" >
+            <label for="favourite">Favourite</label>
+            <div class="tab">
+                <div class="menu-content">
+                    <div class="single-product-item">
+                        <img src="img/tart1.png" alt="Croissant with strawberry">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/bread1.png" alt="bread">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/cr1.png" alt="Croissant tres bell">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/muffins3.png" alt="muffins">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/tart5.png" alt="croissant with chese">
+                    </div>
+                    <div class="single-product-item">
+                        <img src="img/meal-5.png" alt="Classic Croissant">
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -60,7 +60,7 @@ header div{
     margin-top: 30px;
     display: inline-block;
 }
-header div button{
+header div a.hero-btn{
     background-color: #933C24;
     border-radius: 3px;
     color: white;
@@ -141,18 +141,51 @@ header div button:hover{
     cursor: pointer;
 }
 /* End top product section */
-
-/* Start menu section */
+/* tebts */
+.tabs{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the labels */
+}
+label{
+    padding: 20px;
+    cursor: pointer;
+    display: inline !important;
+    order: -1;
+}
+input[type="radio"]:checked + label{
+    border-bottom: #a1503a solid 3px;
+}
+input[type="radio"]{
+    display: none;
+}
+.tab{
+    padding: 20px;
+    display: none;
+    width: 100%;
+}
+input[type="radio"]:checked + label + .tab{
+    display: block;
+}
+/* tebts */
 .menu-section{
     padding: 100px 80px;
     text-align: center;
-  
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .menu-section h1{
     font-family: "Sansita Swashed", system-ui;
     font-size: 60px;
     margin:30px 0px;
+}
+.menu-section input[type="radio"]{
+    display: none;
+}
+.menu-section label{
+    order: -1;
 }
 .menu-tabs span{
     margin-left: 16px;
@@ -282,7 +315,7 @@ input , textarea{
 .card img{
     position: absolute;
     top: -59px;
-    right: calc(100%/3);
+    right: calc(100%/2.6);
 }
 .card p{
     text-align: center;
@@ -314,6 +347,7 @@ footer{
 .social-icons i{
     font-size: 1em;
     margin-right: 5px;
+    cursor: pointer;
 }
 footer img {
     width: 60px;
@@ -349,6 +383,7 @@ footer hr {
     display: flex;
     width: 200px;
     justify-content: space-between;
+    cursor: pointer;
 }
 .single-recent p{
     font-size: 0.8em;
@@ -433,10 +468,6 @@ footer hr {
     .cards{
         grid-template-columns: repeat(1 , 1fr);
         gap: 80px;
-    }
-    .card img{
-        width: 90px;
-        margin-left: 100px;
     }
     .cards{
         grid-template-columns: repeat(2 , 1fr);
